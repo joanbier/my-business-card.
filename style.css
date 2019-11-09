@@ -1,0 +1,1249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+
+}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: url(photos/Chorwacja.JPG);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+/* TYPING  */
+
+.typing {
+    max-width: 50%;
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: white;
+    margin: 80px 40px;
+}
+
+.text {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: cornsilk;
+    text-shadow: black 1px 1px;
+
+}
+
+.cursor {
+    opacity: 0;
+    transition: .2s;
+}
+
+.cursor.active {
+    opacity: 1;
+}
+
+/* -------------------- */
+
+header button {
+    position: absolute;
+    font-size: 25px;
+    bottom: 20%;
+    left: 10%;
+    padding: 20px 30px;
+    /* background-color: black; */
+    background-color: rgba(0, 0, 0, 0.747);
+    color: white;
+    border: 4px ridge rgba(197, 58, 7, 0.795);
+    cursor: pointer;
+    transition: .2s;
+    animation: shakes 4s linear infinite;
+
+}
+
+@keyframes shakes {
+    0% {
+        transform: translateX(0);
+    }
+
+    89% {
+        transform: translateX(0);
+    }
+
+    90% {
+        transform: translateX(-10px);
+    }
+
+    92% {
+        transform: translateX(10px);
+    }
+
+    94% {
+        transform: translateX(-10px);
+    }
+
+    96% {
+        transform: translateX(10px);
+    }
+
+    98% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+header button:hover {
+    color: #FFC945;
+    border: 4px solid black;
+    animation: none;
+
+}
+
+/*WSZYSTKO DLA SEKCJI 1- FEATURES */
+
+
+.features {
+    margin: 0px auto;
+    background-image: url(photos/features/background-869596_1280.png);
+    max-width: 2000px;
+    padding: 2%;
+    text-align: center;
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    color: white;
+
+}
+
+.features h1,
+.features h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+
+}
+
+.features p {
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 50px;
+}
+
+.features img {
+    width: 100%;
+    max-width: 375px;
+
+
+}
+
+/* PORTFOLIO */
+
+
+.portfolio {
+    color: white;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.portfolio h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: rgb(136, 165, 253);
+}
+
+.drawing {
+    background-color: rgba(128, 128, 128, 0.596);
+    height: 50vh;
+    width: 60%;
+    position: relative;
+    border: 3px solid grey;
+    margin: 0 auto;
+}
+
+.drawing>* {
+    text-align: center;
+}
+
+.drawing form {
+    width: 50vw;
+    border: 2px solid black;
+    background-image: linear-gradient(red, rgb(255, 136, 0));
+    padding: 10px 20px;
+    margin: 20px auto;
+    color: black;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.drawing input {
+    width: 30%;
+    font-size: 20px;
+    background: wheat;
+
+}
+
+.drawing button {
+    background-color: black;
+    color: white;
+    border: 2px solid rgba(65, 105, 225, 0.548);
+    padding: 10px 20px;
+    font-size: 16px;
+
+}
+
+.drawing .showName,
+.drawing .showOptions {
+    top: 70%;
+    left: 50%;
+    position: absolute;
+}
+
+.drawing .showOptions {
+    left: 65%;
+}
+
+
+.portfolio .result {
+    color: wheat;
+    margin: 20px auto;
+    font-size: 40px;
+}
+
+.gitHub {
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+
+}
+
+.gitHub>* {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gitHub span {
+    font-size: 25px;
+    top: 20%;
+    z-index: 10;
+}
+
+.gitHub a {
+    top: 60%;
+}
+
+.gitHub a:hover img {
+    width: 180px;
+    border: 4px solid salmon;
+}
+
+.gitHub img {
+    width: 150px;
+    border: 2px solid tomato;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+
+/* MOTTO - SLOGAN */
+.slogan {
+    height: 60vh;
+    width: 100vw;
+    background-image: url(photos/3644018_0.jpg);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+
+}
+
+.slogan h1 {
+    color: rgb(136, 165, 253);
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+/*SEKCJA HOBBY*/
+
+.hobby {
+    max-width: 1920px;
+    margin: 0 auto;
+    color: white;
+
+}
+
+.hobby .item {
+    float: left;
+    width: 50%;
+    height: 50vh;
+    margin-bottom: 10px;
+    background-size: 95% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .3s;
+
+
+
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url(photos/hobby/gory_2.jpg);
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url(photos/hobby/piwko_1.jpg);
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url(photos/hobby/zwiedzanko.JPG);
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url(photos/hobby/sony-2619483_1280.jpg);
+}
+
+.hobby .item p {
+
+    font-family: "Saira", sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 50vh;
+    text-shadow: 0 0 10px black;
+    font-size: 30px;
+
+
+
+}
+
+.hobby h1 {
+    padding: 20px;
+    font-family: "Saira Condensed", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: rgb(136, 165, 253);
+}
+
+.hobby .item:hover {
+    background-size: 110% auto;
+}
+
+.hobby .item p {
+    opacity: 0;
+    transition: .3s;
+}
+
+.hobby .item:hover p {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*SEKCJA KONTAKT*/
+
+
+.contact {
+    background-color: #000;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h1 {
+
+    font-family: "Saira Condensed", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: rgb(136, 165, 253);
+    margin-bottom: 20px;
+
+}
+
+
+.contact .wrap {
+    max-width: 1024px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.contact form {
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 50%;
+
+}
+
+.contact input,
+.contact button,
+.contact textarea {
+
+    width: 80%;
+    margin-bottom: 25px;
+    font-family: "saira", sans-serif;
+    font-size: 12px;
+
+
+}
+
+.contact input {
+    font-size: 12px;
+    height: 36px;
+    padding: 5px;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+
+.contact button {
+    line-height: 40px;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+
+}
+
+.contact button:hover {
+    color: black;
+    background-color: #FFC945;
+}
+
+
+.contact .icona {
+    padding: 10px 0;
+    color: white;
+    font-family: "saira condensed", sans-serif;
+}
+
+.contact .icona img {
+    float: left;
+}
+
+
+.contact .icona span,
+.contact .icona a {
+    font-size: 18px;
+    line-height: 72px;
+    padding-left: 20px;
+    float: left;
+    color: white;
+}
+
+.contact .icona a:hover {
+    color: wheat;
+}
+
+
+
+/*STOPKA*/
+
+footer {
+    background-color: rgba(197, 58, 7, 0.849);
+    color: white;
+    font-family: 'saira', sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* RAKIETA */
+
+.scrollTopButton {
+
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    visibility: hidden;
+    overflow: hidden;
+    z-index: 99999999;
+    background-image: url('photos/rocket.png');
+    background-repeat: no-repeat;
+    right: 30px;
+    bottom: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.scrollTopButton.show {
+    visibility: visible;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+/*  @MEDIA DLA ORIENTACJI PIONOWEJ */
+
+@media (orientation: portrait) and (max-width:1025px) {
+    header {
+        background-size: auto 100%;
+    }
+
+    .typing {
+        max-width: 90%;
+        font-size: 80px;
+    }
+
+    header button {
+        font-size: 50px;
+        padding: 30px;
+    }
+
+    .portfolio {
+        margin-bottom: 0;
+    }
+
+    .drawing {
+
+        height: 30vh;
+        width: 60%;
+
+    }
+
+    .portfolio .result {
+        font-size: 30px;
+    }
+
+    .gitHub {
+        height: 20vh;
+    }
+
+    .slogan {
+        margin-top: 10px;
+        height: 45vh;
+    }
+
+    .hobby .item {
+        float: none;
+        width: 100%;
+        height: 40vh;
+        background-size: 90% auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (orientation: portrait) and (max-width:835px) {
+    .typing {
+        font-size: 60px;
+        max-width: 80%;
+    }
+
+    header button {
+        font-size: 40px;
+        padding: 20px;
+    }
+
+
+
+    .drawing button {
+
+        padding: 5px 10px;
+        font-size: 15px;
+
+    }
+
+    .portfolio .result {
+        font-size: 25px;
+    }
+
+    .gitHub img {
+        width: 110px;
+    }
+
+
+}
+
+@media (orientation: portrait) and (max-width:768px) {
+
+    .drawing form {
+        font-size: 18px;
+    }
+
+    .drawing input {
+        font-size: 18px;
+    }
+
+    .drawing button {
+        padding: 5px 8px;
+        font-size: 14px;
+
+    }
+
+    .portfolio .result {
+        font-size: 20px;
+    }
+
+    .gitHub span {
+        font-size: 20px;
+    }
+
+
+}
+
+@media (orientation: portrait) and (max-width:415px) {
+    .typing {
+        font-size: 35px;
+        max-width: 95%;
+    }
+
+    header button {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .features h1,
+    .features h2 {
+        font-size: 20px;
+    }
+
+    .features p {
+        font-size: 15px;
+        margin: 20px;
+    }
+
+    .features img {
+        max-width: 250px;
+    }
+
+    .features .cssPicture {
+        width: 50%;
+    }
+
+    .portfolio {
+        margin-bottom: 0;
+    }
+
+    .portfolio h1 {
+        font-size: 25px;
+    }
+
+    .drawing {
+        height: 40vh;
+        width: 80%;
+    }
+
+    .drawing {
+        width: 95%;
+    }
+
+    .drawing form {
+        width: 90vw;
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .drawing input {
+        width: 30%;
+        font-size: 16px;
+
+    }
+
+    .drawing h2 {
+        font-size: 20px;
+    }
+
+    .drawing button {
+        padding: 5px 10px;
+        font-size: 14px;
+        margin-top: 5px;
+
+    }
+
+    .drawing .showName,
+    .drawing .showOptions {
+        top: 80%;
+        left: 20%;
+    }
+
+    .drawing .showOptions {
+        left: 50%;
+    }
+
+
+    .portfolio .result {
+        font-size: 20px;
+    }
+
+    .gitHub {
+        height: 25vh;
+    }
+
+    .gitHub span {
+        font-size: 16px;
+    }
+
+    .gitHub img {
+        width: 80px;
+    }
+
+    .gitHub a:hover img {
+        width: 90px;
+        border: 3px solid salmon;
+    }
+
+
+    .slogan {
+        background-size: 120%;
+        margin-top: 0;
+    }
+
+    .slogan h1 {
+        padding: 0px;
+        font-size: 25px;
+
+    }
+
+    .hobby h1 {
+        font-size: 25px;
+    }
+
+    .hobby .item p {
+        line-height: 40vh;
+        font-size: 20px;
+
+    }
+
+    .contact h1 {
+        font-size: 25px;
+    }
+
+    .contact {
+        display: block;
+    }
+
+    .contact .wrap {
+        display: block;
+    }
+
+    .contact form {
+        margin: 10px auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    .contact .icons {
+        padding-left: 30px;
+    }
+
+    .contact .icona img {
+        width: 60px;
+
+    }
+
+    .contact .icona span,
+    .contact .icona a {
+        font-size: 18px;
+        line-height: 60px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .scrollTopButton {
+
+        width: 40px;
+        height: 40px;
+        background-position: center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+    }
+
+}
+
+@media (orientation: portrait) and (max-width:376px) {
+
+    header {
+        width: 100%;
+        background-position-x: -130vw;
+    }
+
+    .typing {
+        font-size: 30px;
+        width: 85%;
+
+    }
+
+    header button {
+        font-size: 20px;
+
+    }
+
+    .features h1,
+    .features h2 {
+        font-size: 18px;
+    }
+
+    .features p {
+        font-size: 12px;
+    }
+
+    .portfolio h1 {
+        font-size: 20px;
+    }
+
+    .drawing {
+        width: 90%;
+    }
+
+    .drawing form {
+        width: 70vw;
+        font-size: 13px;
+    }
+
+    .drawing input {
+        width: 40%;
+        font-size: 13px;
+
+    }
+
+    .drawing h2 {
+        font-size: 16px;
+    }
+
+    .drawing button {
+        padding: 2px 10px;
+        font-size: 12px;
+        margin-top: 7px;
+    }
+
+
+
+    .portfolio .result {
+        font-size: 16px;
+    }
+
+
+    .slogan h1 {
+
+        font-size: 20px;
+
+    }
+
+    .hobby h1 {
+        font-size: 20px;
+    }
+
+    .contact h1 {
+        font-size: 20px;
+    }
+
+    .contact form {
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    .contact .icona span,
+    .contact .icona a {
+        font-size: 16px;
+        padding-left: 20px;
+        line-height: 60px;
+    }
+
+    .contact .icona img {
+        width: 60px;
+        height: 60px;
+    }
+
+
+
+}
+
+
+@media (orientation: portrait) and (max-width:321px) {
+
+
+    .typing {
+        font-size: 22px;
+
+    }
+
+    header button {
+        font-size: 18px;
+
+    }
+
+    .gitHub span {
+        font-size: 12px;
+    }
+
+    .gitHub img {
+        width: 60px;
+    }
+
+    .gitHub a:hover img {
+        width: 70px;
+        border: 3px solid salmon;
+    }
+
+    .contact .icona span,
+    .contact .icona a {
+        font-size: 14px;
+        padding-left: 15px;
+        line-height: 50px;
+    }
+
+    .contact .icona img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/*  @MEDIA DLA ORIENTACJI Poziomej */
+
+/* @media (orientation: landscape) and (max-width:1920px) {
+    .typing {
+        max-width: 70%;
+        font-size: 80px;
+        margin: 150px 50px;
+    }
+
+    header button {
+        font-size: 50px;
+    }
+
+    .features h1,
+    .features h2 {
+        font-size: 50px;
+        padding: 20px;
+
+    }
+
+    .features p {
+        font-size: 30px;
+        line-height: 40px;
+        margin: 20px 50px;
+    }
+
+    .features img {
+        max-width: 600px;
+        margin: 20px;
+    }
+
+
+    .portfolio h1 {
+        font-size: 50px;
+    }
+
+
+    .drawing form {
+        padding: 15px;
+        font-size: 30px;
+    }
+
+    .drawing input {
+        font-size: 30px;
+    }
+
+    .drawing button {
+        padding: 10px 25px;
+        font-size: 25px;
+    }
+
+    .drawing h2 {
+        font-size: 30px;
+    }
+
+    .slogan h1 {
+        font-size: 50px;
+
+    }
+
+    .hobby h1 {
+        font-size: 50px;
+    }
+
+    .contact h1 {
+        font-size: 50px;
+    }
+} */
+
+
+/* @media (orientation: landscape) and (max-width:1600px) {
+    .typing {
+        max-width: 70%;
+        font-size: 60px;
+        margin: 100px 50px;
+    }
+
+    header button {
+        font-size: 30px;
+    }
+
+    .features h1,
+    .features h2 {
+        font-size: 40px;
+
+    }
+
+    .features .cssPicture {
+        width: 30%;
+    }
+
+    .portfolio h1 {
+        font-size: 40px;
+    }
+
+    .drawing .showName,
+    .drawing .showOptions {
+        left: 40%;
+    }
+
+    .drawing .showOptions {
+        left: 60%;
+    }
+
+
+    .slogan h1 {
+        font-size: 40px;
+
+    }
+
+    .hobby h1 {
+        font-size: 40px;
+    }
+
+    .contact h1 {
+        font-size: 40px;
+    }
+} */
+
+/* @media (orientation: landscape) and (max-width:1400px) {
+
+    .drawing {
+        width: 80vw;
+    }
+
+    .drawing form {
+        padding: 15px;
+        font-size: 25px;
+        width: 95%;
+    }
+
+} */
+
+
+
+@media (orientation: landscape) and (max-width:740px) {
+    .typing {
+        max-width: 65%;
+        font-size: 35px;
+        margin: 50px 50px;
+    }
+
+    header button {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .features h1,
+    .features h2 {
+        font-size: 20px;
+
+    }
+
+    .features p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .features img {
+        max-width: 300px;
+    }
+
+
+    .portfolio h1 {
+        font-size: 20px;
+    }
+
+    .drawing {
+        height: 70vh;
+    }
+
+    .drawing form {
+        padding: 10px;
+        font-size: 15px;
+        width: 70%;
+    }
+
+    .drawing input {
+        font-size: 15px;
+    }
+
+    .drawing button {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+    .drawing h2 {
+        font-size: 18px;
+    }
+
+    .drawing .result {
+        font-size: 20px;
+    }
+
+    .slogan h1 {
+        font-size: 20px;
+
+    }
+
+    .hobby h1 {
+        font-size: 20px;
+    }
+
+    .contact h1 {
+        font-size: 20px;
+    }
+
+    .contact .icona span,
+    .contact .icona a {
+        font-size: 16px;
+        line-height: 50px;
+
+    }
+
+    .contact .icona img {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .scrollTopButton {
+
+        width: 40px;
+        height: 40px;
+        background-position-x: center;
+        background-size: 70%;
+    }
+
+}
+
+@media (orientation: landscape) and (max-width:668px) {
+    .typing {
+        font-size: 30px;
+    }
+
+    header button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+
+@media (orientation: landscape) and (max-width:570px) {
+    .typing {
+        font-size: 25px;
+    }
+
+    header button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .features h1,
+    .features h2 {
+        font-size: 15px;
+        padding: 10px;
+
+    }
+
+    .features p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .features img {
+        max-width: 250px;
+    }
+
+    .drawing form {
+        padding: 5px;
+        font-size: 12px;
+        width: 70%;
+    }
+
+    .drawing input {
+        font-size: 12px;
+    }
+
+    .drawing button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .drawing h2 {
+        font-size: 15px;
+    }
+
+    .drawing .result {
+        font-size: 16px;
+    }
+
+    .slogan {
+        margin: 10px auto;
+    }
+
+    .slogan h1 {
+        padding: 2px;
+
+    }
+
+    .hobby .item p {
+        font-size: 15px;
+
+    }
+
+
+    .contact .icona span,
+    .contact .icona a {
+        font-size: 12px;
+        line-height: 40px;
+
+    }
+
+    .contact .icona img {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+}
