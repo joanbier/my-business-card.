@@ -552,6 +552,10 @@ footer {
 }
 
 @media (orientation: portrait) and (max-width:835px) {
+    header {
+        background-attachment: scroll;
+    }
+
     .typing {
         font-size: 60px;
         max-width: 80%;
